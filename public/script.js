@@ -1,5 +1,6 @@
 const socket = io('/')
 const videoGrid = document.getElementById('videogrid')
+//const mypeer=new Peer({host:'peerjs-server.herokuapp.com', secure:true, port:443})
 const mypeer = new Peer(undefined, { 
     //host: 'peerjs-server.herokuapp.com',
     host:'/',
@@ -52,3 +53,4 @@ function addVideoStream(video,stream){
     })
     videoGrid.append(video)
 }
+// https://demo-app-komal.herokuapp.com
